@@ -1,0 +1,33 @@
+/* Глобальные стили */
+body {
+    font-family: 'Montserrat', sans-serif; /* Эстетичный и хорошо читаемый шрифт */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffcc00, #ff0000); /* Градиент желто-красный */
+    background-image: url('pretzel.png'), url('berlin_wall.png'), url('tv_tower.png'), url('castle.png'), url('national_costume.png');
+    background-repeat: no-repeat;
+    background-position: center top, center bottom, left top, right top, left bottom;
+    background-size: 100px, 100px, 200px, 200px, 150px;
+    color: #333;
+}
+
+/* Кнопки */
+button {
+    background-color: #000; /* Черные кнопки */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+button:focus {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Другие секции остаются аналогичными */
