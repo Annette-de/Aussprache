@@ -1,10 +1,10 @@
 /* Основные стили */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Жирный и эстетичный шрифт */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #ffcc00, #ff0000); /* Красно-желтый градиент */
+    background: linear-gradient(to bottom, #ffcc00, #ff0000);
     background-image: url('pretzel.png'), url('berlin_wall.png'), url('tv_tower.png'), url('castle.png'), url('national_costume.png');
     background-repeat: no-repeat;
     background-position: center top, center bottom, left top, right top, left bottom;
@@ -47,6 +47,16 @@ nav ul li a:focus {
     color: #000; /* Черный цвет при наведении */
 }
 
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #ffcc00;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
 /* Основные секции */
 section {
     padding: 2rem;
@@ -61,23 +71,9 @@ section {
 }
 
 /* Заголовки */
-h1 {
-    font-size: 2.5rem;
+h1, h2, h3 {
+    font-weight: 700; /* Жирный шрифт */
     color: #fff;
-    margin-bottom: 0.5rem;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 1rem;
-}
-
-/* Параграфы */
-p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
 }
 
 /* Кнопки */
@@ -111,7 +107,7 @@ footer {
     z-index: 1000;
 }
 
-/* Адаптивность */
+/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     body {
         background-size: 50px, 50px, 100px, 100px, 75px;
